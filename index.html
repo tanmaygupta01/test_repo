@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table and Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <h1>Time Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day/Period</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th class="hide"> </th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>English</td>
+                <td>Math</td>
+                <td>Art</td>
+                <td>SST</td>
+                <td rowspan="6" class="break">BREAK</td>
+                <td>Science</td>
+                <td>Computer</td>
+                <td>Math</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="2">Math</td>
+                <td>Games</td>
+                <td>SST</td>
+                <td colspan="2">Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td colspan="2">English</td>
+                <td colspan="2">SST</td>
+                <td colspan="2">Computer</td>
+                <td>Science</td>
+                <td>Hindi</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>English</td>
+                <td>Math</td>
+                <td colspan="2">Hindi</td>
+                <td>Science</td>
+                <td>Computer</td>
+                <td>Games</td>
+                <td>SST</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>English</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>SST</td>
+                <td>Math</td>
+                <td>Computer</td>
+                <td>Art</td>
+                <td>Hindi</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="10">Class VIII-A</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+
+    <h2>MY BIO DATA</h2>
+    <form action="#" method="GET">
+        <div>
+            <fieldset>
+                <legend class="legends">Personal Information</legend>
+
+                <label for="name" class="name">First Name :</label>
+                <input type="text" placeholder="First Name" required>
+                <label for="name" class="name">Last Name :</label>
+                <input type="text" placeholder="Last Name" required>
+                <br><br>
+
+                <label for="gender" class="name">Male</label>
+                <input type="radio" name="gen">
+                <label for="gender" class="name">Female</label>
+                <input type="radio" name="gen">
+                <label for="gender" class="name">Other</label>
+                <input type="radio" name="gen">
+                <br><br>
+
+                <label for="date of birth" class="name">Date Of Birth :</label>
+                <input type="date" required>
+                <br><br>
+
+                <label for="e-mail" class="name">E-Mail :</label>
+                <input type="email" placeholder="Enter Your E-Mail" required>
+                <br><br>
+
+                <label for="phone" class="name">Phone Number :</label>
+                <input type="number" class="phone" min="0" max="100">
+                <input type="tel">
+                <br><br>
+
+                <label for="height" class="name">Height :</label>
+                <input type="number" placeholder="Feet" required>
+                <input type="number" placeholder="Inches" required>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend class="legends">Education</legend>
+                <label for="name" class="name">School Name :</label>
+                <input type="text" placeholder="Enter name of School" required>
+                <br><br>
+
+                <label for="cla" class="name">Class :</label>
+                <input type="number" placeholder="Enter Class" required>
+                <br><br>
+
+                <label for="stream" class="name">Stream :</label>
+                <select name="stream" required>
+                    <option value="" disabled selected hidden>Select your Stream</option>
+                    <option value="Science">Science</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Humanities">Humanities</option>
+                </select>
+                <br><br>
+
+                <label for="marksheet" class="name">Marksheet :</label>
+                <input type="file" required>
+            </fieldset>
+        </div>
+
+        <div class="di">
+            <input type="submit" value="Submit!">
+        </div>
+    </form>
+</body>
+
+</html>
